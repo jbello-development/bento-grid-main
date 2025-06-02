@@ -8,67 +8,111 @@ body {
 
 .container { /* 3 rows and 4 columns */
     display: grid;
-    grid-template-rows: 250px 250px 250px;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
 }
 
 .create-post-container {
-    width: 300px;
-    height: 600px;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 200px;
+    height: 400px;
     background-color: hsl(31, 66%, 93%);
     border-radius: 10px;
 }
 
+.create-post-text h1 {
+    letter-spacing: -3px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.create-post-text h1 span {
+    font-style: italic;
+    color: hsl(256, 67%, 59%);  
+}
+
+
+.create-post-image {
+    padding-top: 10px;
+}
+
 .five-stars-container {
-    width: 600px;
-    height: 300px;
+    padding: 40px;
+    width: 450px;
+    height: 250px;
     background-color: hsl(256, 67%, 59%);
     border-radius: 10px;
+    place-items: center;
+    text-align: center;
+}
+
+.five-stars-container h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.five-stars-container h1 span {
+    color: hsl(39, 100%, 71%);
+}
+
+.five-stars-container img {
+    max-width: 175px;   
+    height: auto;
+}
+
+.five-stars-container p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
 }
 
 .schedule-posts-container {
-    width: 300px;
-    height: 600px;
+    width: 200px;
+    height: 450px;
     background-color: hsl(254, 88%, 90%);
     border-radius: 10px;
 }
 
 .ai-content-container {
-    width: 300px;
-    height: 600px;
+    width: 200px;
+    height: 450px;
     background-color: hsl(39, 100%, 71%);
     border-radius: 10px;
 }
 
 .multiple-platforms-container {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: hsl(31, 66%, 93%);
     border-radius: 10px;
 }
 
 .consistent-schedule-container {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: hsl(39, 100%, 71%);
     border-radius: 10px;
 }
 
 .audience-growth-container {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
 }
 
 .grow-followers-container {
-    width: 600px;
-    height: 300px;
+    width: 450px;
+    height: 200px;
     background-color: hsl(256, 67%, 59%);
     border-radius: 10px;
 }
 
-.create-post-container,
+/* .create-post-container,
 .five-stars-container,
 .schedule-posts-container,
 .ai-content-container,
@@ -83,7 +127,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
-}
+} */
 
 .create-post-container img,
 .five-stars-container img,
@@ -93,8 +137,12 @@ body {
 .consistent-schedule-container img,
 .audience-growth-container img,
 .grow-followers-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;           /* Image fills container width */
+    height: auto;          /* Maintain aspect ratio */
+    max-height: 100%;      /* Prevent overflow vertically */
+    object-fit: contain;   /* Contain image within box */
     display: block;
     margin-bottom: 16px;
+    border-radius: 8px;    /* Optional: rounded corners */
 }
+
