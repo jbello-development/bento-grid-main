@@ -1,0 +1,100 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px;
+}
+
+.container { /* 3 rows and 4 columns */
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px;
+}
+
+.create-post-container {
+    width: 300px;
+    height: 600px;
+    background-color: hsl(31, 66%, 93%);
+    border-radius: 10px;
+}
+
+.five-stars-container {
+    width: 600px;
+    height: 300px;
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 10px;
+}
+
+.schedule-posts-container {
+    width: 300px;
+    height: 600px;
+    background-color: hsl(254, 88%, 90%);
+    border-radius: 10px;
+}
+
+.ai-content-container {
+    width: 300px;
+    height: 600px;
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 10px;
+}
+
+.multiple-platforms-container {
+    width: 300px;
+    height: 300px;
+    background-color: hsl(31, 66%, 93%);
+    border-radius: 10px;
+}
+
+.consistent-schedule-container {
+    width: 300px;
+    height: 300px;
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 10px;
+}
+
+.audience-growth-container {
+    width: 300px;
+    height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.grow-followers-container {
+    width: 600px;
+    height: 300px;
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 10px;
+}
+
+.create-post-container,
+.five-stars-container,
+.schedule-posts-container,
+.ai-content-container,
+.multiple-platforms-container,
+.consistent-schedule-container,
+.audience-growth-container,
+.grow-followers-container {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.create-post-container img,
+.five-stars-container img,
+.schedule-posts-container img,
+.ai-content-container img,
+.multiple-platforms-container img,
+.consistent-schedule-container img,
+.audience-growth-container img,
+.grow-followers-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 16px;
+}
