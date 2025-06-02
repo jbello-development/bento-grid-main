@@ -7,10 +7,12 @@ body {
     padding: 20px;
 }
 
-.container { /* 3 rows and 4 columns */
+.container {
     display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-auto-rows: minmax(180px, auto);   /* Rows grow with content */
+    gap: 20px;                             /* Space between items */
+    width: 100%;
 }
 
 .create-post-container {
@@ -234,23 +236,6 @@ body {
     margin-bottom: 8px;
     border-radius: 8px;
 }
-
-/* .create-post-container,
-.five-stars-container,
-.schedule-posts-container,
-.ai-content-container,
-.multiple-platforms-container,
-.consistent-schedule-container,
-.audience-growth-container,
-.grow-followers-container {
-    display: grid;
-    grid-template-rows: auto 1fr; 
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-} */
 
 .create-post-container img,
 .five-stars-container img,
