@@ -1,4 +1,5 @@
 body {
+    background-color: hsl(0, 0%, 94%);
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -66,50 +67,172 @@ body {
 }
 
 .five-stars-container p {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 1%, 86%);
     font-weight: 500;
 }
 
 .schedule-posts-container {
     width: 200px;
-    height: 450px;
+    height: 400px;
+    padding: 20px;
     background-color: hsl(254, 88%, 90%);
     border-radius: 10px;
 }
 
+.schedule-posts-container h1 {
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.schedule-posts-container img {
+    max-width: auto;   
+    height: 400px;
+}
+
 .ai-content-container {
     width: 200px;
-    height: 450px;
+    height: 350px;
+    padding-top: 10px;
+    padding: 20px;
     background-color: hsl(39, 100%, 71%);
     border-radius: 10px;
+}
+
+.ai-content-container h1 {
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.ai-content-container img {
+    padding-top: 20px;
+    max-width: 100%;   
 }
 
 .multiple-platforms-container {
     width: 200px;
     height: 200px;
+    padding: 20px;
     background-color: hsl(31, 66%, 93%);
     border-radius: 10px;
 }
 
+.multiple-platforms-container h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
 .consistent-schedule-container {
-    width: 200px;
-    height: 200px;
-    background-color: hsl(39, 100%, 71%);
+    width: 220px;           /* or your preferred width */
+    height: 220px;          /* or your preferred height */
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    overflow: hidden;       /* Prevents overflow */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 0;
+    text-align: center;
+}
+
+.consistent-schedule-container img {
+    max-width: 100%;
+    max-height: 80px;       /* Adjust as needed */
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.consistent-schedule-container h1 {
+    font-size: 1.1rem;      /* Adjust as needed */
+    line-height: 1.1;
+    margin: 0;
+    word-break: break-word; /* Allow long words to wrap */
 }
 
 .audience-growth-container {
     width: 200px;
     height: 200px;
+    padding: 20px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    overflow: hidden;           /* Prevent overflow */
+    box-sizing: border-box;
+    display: flex;              /* Stack content vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;               /* Allow children to shrink */
+    min-height: 0;
+    text-align: center;
+}
+
+.audience-growth-container img {
+    max-width: 100%;
+    max-height: 80px;           /* Adjust as needed to fit your design */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.audience-growth-container h1 {
+    font-weight: 550;
+    font-size: 1.5rem;          /* Reduce if text is still too large */
+    letter-spacing: -1px;
+    line-height: 1.1;
+    word-break: break-word;     /* Allow long words to wrap */
+    margin: 0;
+    padding: 0;
 }
 
 .grow-followers-container {
-    width: 450px;
-    height: 200px;
+    width: 220px;              /* Adjust as needed */
+    height: 220px;             /* Adjust as needed */
+    padding: 20px;
     background-color: hsl(256, 67%, 59%);
     border-radius: 10px;
+    overflow: hidden;          /* Prevents overflow */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 0;
+    text-align: center;
+}
+
+.grow-followers-container h1 {
+    font-size: 1.1rem;         /* Adjust as needed */
+    line-height: 1.1;
+    margin: 0;
+    word-break: break-word;    /* Allow long words to wrap */
+    color: #fff;               /* Or your preferred color */
+    padding: 0;
+}
+
+.grow-followers-container img {
+    max-width: 100%;
+    max-height: 80px;          /* Adjust as needed */
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 8px;
+    border-radius: 8px;
 }
 
 /* .create-post-container,
