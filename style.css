@@ -1,53 +1,49 @@
-@import url("./assets/fonts/static/DMSans-Medium.ttf");
-@import url("./assets/fonts/static/DMSans-MediumItalic.ttf");
-@import url("./assets/fonts/static/DMSans-Regular.ttf");
-
-@font-face {
-  font-family: "DM Sans", sans-serif;
-  src: url("/assets/fonts/static/DMSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "DM Sans", sans-serif;
-  src: url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
+/* Basic page styles and font settings */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   font-family: DM Sans, sans-serif;
+  background-color: #F5F5F5;
 }
+
+/* Main grid container setup 
+   Creates a 4x4 responsive grid with minimum sizes */
 .container {
   display: grid;
   padding: 2em;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
+  /* Creates 4 columns, each at least 250px wide, 
+     and each takes 1 part (fraction) of the available space */
   grid-template-rows: repeat(4, minmax(185px, 1fr));
+  /* Creates 4 rows, each at least 185px tall, 
+     but can grow proportionally if there's extra space (up to 1 fraction of the remaining space) */
   gap: 30px;
   justify-items: center;
   height: 100vh;
 }
 
+/* Create post section styles */
 .create-post-container img {
   max-width: 10em;
 }
 
 .create-post-container {
   text-align: center;
-  max-width: 10em;
-  grid-row: 1 / 4;
+  grid-row: 1 / 4; /* Spans 3 rows */
   background-color: #faeee2;
-  max-width: 230px ;
-  width: 100%;
+  max-width: 230px;
   padding: 2em;
+  height: 75%;
 }
+
+/* Heading styles for create post section */
 .create-post-container h2 span {
   color: #8666d5;
 }
@@ -55,6 +51,29 @@ body {
   font-size: 2rem;
 }
 
+
+.multiple-platforms-container img{
+  max-width: 200px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .multiple-platforms-container {
+  border-radius: 15px;
+  text-align: end;
+  grid-row: 3/5;
+  background-color: white;
+  height: 210px;
+  padding: 1.5em;
+}
+
+.container .multiple-platforms-container h2{
+ 
+  text-align: start;
+ 
+}
+/* Five stars section styles 
+   Spans 2 columns and 2 rows */
 .five-stars-container {
   text-align: center;
   color: white;
@@ -64,16 +83,22 @@ body {
   width: 100%;
 }
 
+/* Schedule posts section styles */
 .schedule-posts-container {
   text-align: center;
-  grid-row: 1/4;
-  background-color: #DCD1FC;
+  grid-row: 1/4; /* Spans 3 rows */
+  background-color: #dcd1fc;
 }
 
 
+
+/* Common styles for all main containers
+   Centers content and adds rounded corners */
+  
+
 .container .five-stars-container,
 .container .create-post-container,
-.schedule-posts-container{
+.schedule-posts-container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -81,6 +106,12 @@ body {
   border-radius: 15px;
 }
 
-.schedule-posts-container img{
+/* Image size control for schedule posts section */
+.schedule-posts-container img {
   max-width: 10em;
 }
+
+
+
+
+
